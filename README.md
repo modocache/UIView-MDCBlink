@@ -12,10 +12,15 @@ HTML `<blink></blink>` for iOS.
 ## Example
 
 ```objc
-UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 40)];  // #A
-label.text = @"HTML for the win.";
-[label blink];  // #B
+#import "UIView+MDCBlink.h`  // #A
 
-// #A Create the label.
-// #B Send the blink message.
+- (void)createLabel {
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 40)];  // #B
+    label.text = @"HTML for the win.";
+    [label blink];  // #C
+}
+
+// #A Import the header.
+// #B Create the label.
+// #C Send the blink message.
 ```
