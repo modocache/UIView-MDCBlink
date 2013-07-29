@@ -1,4 +1,11 @@
-## MDCBlink
+- [MDCBlink](#mdcblink)
+	- [How to Install](#how-to-install)
+	- [How to Use](#how-to-use)
+	- [Sample Usage](#sample-usage)
+
+---
+
+# MDCBlink
 
 HTML `<blink></blink>` for iOS.
 
@@ -22,7 +29,7 @@ pod 'UIView+MDCBlink'
 1. Import the category `UIView (MDCBlink)`.
 2. Send the `-blink` message to any instance of `UIView`.
 
-## Example
+## Sample Usage
 
 ```objc
 #import "UIView+MDCBlink.h`  // #A
