@@ -36,7 +36,11 @@ static void * kMDCBlinkTimerKey = &kMDCBlinkTimerKey;
 #pragma mark - Public Interface
 
 - (void)blink {
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(blinkTimerFired:) userInfo:nil repeats:YES];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1
+                                                      target:self
+                                                    selector:@selector(blinkTimerFired:)
+                                                    userInfo:nil
+                                                     repeats:YES];
     objc_setAssociatedObject(self, kMDCBlinkTimerKey, timer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
@@ -50,6 +54,9 @@ static void * kMDCBlinkTimerKey = &kMDCBlinkTimerKey;
     [timer invalidate];
     self.hidden = NO;
 }
+
+
+#pragma mark - Internal Methods
 
 - (void)blinkTimerFired:(NSTimer *)timer {
     self.hidden = !self.hidden;
