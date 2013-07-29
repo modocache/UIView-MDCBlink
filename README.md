@@ -4,6 +4,19 @@ HTML `<blink></blink>` for iOS.
 
 ![](http://f.cl.ly/items/191d0y2D3u2M0r0G2D1p/MDCBlink.gif)
 
+## How to Install
+
+1. Add `UIView+MDCBlink` to your Podfile.
+2. Run `pod install`.
+
+```ruby
+# Podfile
+
+platform :ios, '5.0'
+
+pod 'UIView+MDCBlink'
+```
+
 ## How to Use
 
 1. Import the category `UIView (MDCBlink)`.
